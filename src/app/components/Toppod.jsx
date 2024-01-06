@@ -176,38 +176,39 @@ import style from './style/style.module.css'
 import { TbHeadphonesFilled } from 'react-icons/tb';
 
 const responsive = {
+  // superLargeDesktop: {
+  //   breakpoint: { max: 4000, min: 3000 },
+  //   items: 5
+  // },
   desktop: {
-    breakpoint: { max: 3000, min: 1020 },
-    items: 3,
-    slidesToSlide: 3,
+    breakpoint: { max: 3000, min: 1000 },
+    items: 3
   },
   tablet: {
-    breakpoint: { max: 1020, min: 620 },
-    items: 2,
-    slidesToSlide: 2,
+    breakpoint: { max: 1000, min: 464 },
+    items: 2
   },
   mobile: {
-    breakpoint: { max: 620, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
+    breakpoint: { max: 600, min: 0 },
+    items: 1
+  }
 };
 
 export default function Caro() {
   const slid = swip.map((sliders) => (
     <section key={sliders.text} className='flex justify-center items-center'>
-        <div className='flex mb-10'>
+        <div className='flex flex-row mb-10'>
       <div className="relative">
                         <Image src={sliders.image} height={100} width={100} alt='image' className={`relative rounded-l-md ${style.episodes} `} />
                         <div className="absolute top-0 right-0 mt-3 mr-3 bg-white h-7 w-7 rounded-md flex justify-center items-center">
                         <TbHeadphonesFilled className='w-4 h-4 text-black' />
                     </div>
                     </div>
-                    <div className={`flex items-center  shadow-md p-6 bg-white mr-10 w-[300px] rounded-r-md ${style.episodes}`}>
+                    <div className={`flex items-center  shadow-md p-6 bg-white w-[300px] rounded-r-md mr-10 ${style.episodes}`}>
                     <div>
                         <h2 className='text-[10px] text-gray-400'>{sliders.text}</h2>
                         <h2 className='font-semibold text-[14px] md:text-[17px] '><div dangerouslySetInnerHTML={{ __html: sliders.secText }} /></h2>
-                        <div className='h-[2px] w-[135px] bg-black'></div>
+                        <div className='h-[2px] w-[10] bg-black'></div>
                         <div className='flex mt-5  items-center'>
                             <h2 className='text-[10px] text-gray-400 mr-1'>share</h2>
 

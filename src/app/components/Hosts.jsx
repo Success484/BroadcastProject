@@ -6,7 +6,7 @@ import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 export default function Hosts() {
     const Host = hosters.map((host) => (
         <section key={host.name} className=''>
-        <Image src={host.image} height={250} width={280} alt='' className='rounded-t-md'/>
+        <Image src={host.image} height={250} width={284} alt='' className='rounded-t-md'/>
         <div className='flex items-center bg-white shadow-md p-6 rounded-b-md'>
           <div>
         <h2 className='font-semibold text-[17px]'>{host.name}</h2>

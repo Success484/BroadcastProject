@@ -6,7 +6,7 @@ import style from './style/style.module.css'
 export default function Header() {
   return (
     <div className={style.Header}>
-            <div className='grid justify-center mt-[45px] mr-[36%]'>
+            <div className='mt-[45px] '>
                 <div  className='mb-10 ml-6'>
                 <h1 className='text-[42px] md:text-[50px] sm:text-[50px] font-semibold'>New episode</h1>
                 <h1 className='text-[42px] md:text-[60px] sm:text-[50px] font-semibold mt-[-8px]'>available now</h1>

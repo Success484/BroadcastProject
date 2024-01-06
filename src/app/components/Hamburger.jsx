@@ -13,7 +13,7 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className='absolute top-7 '>
+    <div className='absolute top-[20px] '>
       <div onClick={toggleMenu}>
         {isOpen ? (
           <IoIosCloseCircleOutline size={25} />

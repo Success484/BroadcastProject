@@ -32,7 +32,7 @@ export default function AboutSection() {
                
                       <TbGridDots size={20}/>
                     </div>
-                    <button className='block md:hidden sm:block mr-20'>
+                    <button className='block md:hidden sm:block mr-20 -mt-[20px]'>
                      < HamburgerMenu/>
                      </button>
                 </nav>

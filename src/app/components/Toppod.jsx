@@ -177,17 +177,17 @@ import { TbHeadphonesFilled } from 'react-icons/tb';
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 3000, min: 1080 },
+    breakpoint: { max: 3000, min: 1020 },
     items: 3,
     slidesToSlide: 3,
   },
   tablet: {
-    breakpoint: { max: 1080, min: 720 },
+    breakpoint: { max: 1020, min: 620 },
     items: 2,
     slidesToSlide: 2,
   },
   mobile: {
-    breakpoint: { max: 720, min: 0 },
+    breakpoint: { max: 620, min: 0 },
     items: 1,
     slidesToSlide: 1,
   },

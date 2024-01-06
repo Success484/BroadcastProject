@@ -10,11 +10,11 @@ export default function Position() {
   return (
     <div className='mb-5 w-[100%] h-[200px]'>
         <div className={`flex justify-center items-center${style.index }`}>
-            <div className={style.cast1}></div>
-            <div className='bg-white pt-5 pl-5 pr-5 pb shadow-md'>
+            <Image src={'/cast1.png'} height={200} width={200} alt='' />
+            <div className='bg-white pt-5 pl-5 pr-5 shadow-md'>
               <div className='flex justify-between'>
                 <div className='ml-15'>
-                    <h2 className='text-[16px] leading-[35px] font-semibold md:text-[25px] sm:text-[18px]'>Timmy Milke: the nature <br />of design</h2>
+                    <h2 className='text-[13px] leading-[35px] font-semibold md:text-[25px] sm:text-[18px]'>Timmy Milke: the nature <br />of design</h2>
                     <div className='mb-4 mt-4 text-[10px] text-gray-400'>
                       <h2 className='flex items-center'>Episode 1 <span className='relative top-[-2.5px] ml-[2px] mr-[2px]'>. </span>Microphone <span className='relative top-[-2.5px] ml-[2px] mr-[2px]'>. </span>0:13</h2>
                     </div>
@@ -29,7 +29,7 @@ export default function Position() {
                 </div>
                 
               </div>
-              <div className='flex justify-center items-center space-x-5'>
+              <div className='flex justify-center items-center space-x-2 md:space-x-5'>
                 <div className='lg:h-[55px] lg:w-[55px] w-[50px] sm:w-[50px] sm:h-[50px] h-[40px]  rounded-[80%] border-[2px] border-gray-200'></div>
                 <h2 className='text-[10px] text-gray-400'>10s</h2>
                 <h2 className='text-[10px] text-gray-400'>10s</h2>

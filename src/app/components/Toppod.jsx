@@ -176,20 +176,16 @@ import style from './style/style.module.css'
 import { TbHeadphonesFilled } from 'react-icons/tb';
 
 const responsive = {
-  // superLargeDesktop: {
-  //   breakpoint: { max: 4000, min: 3000 },
-  //   items: 5
-  // },
   desktop: {
-    breakpoint: { max: 3000, min: 1000 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1000, min: 464 },
+    breakpoint: { max: 1024, min: 464 },
     items: 2
   },
   mobile: {
-    breakpoint: { max: 600, min: 0 },
+    breakpoint: { max: 464, min: 0 },
     items: 1
   }
 };
@@ -204,7 +200,7 @@ export default function Caro() {
                         <TbHeadphonesFilled className='w-4 h-4 text-black' />
                     </div>
                     </div>
-                    <div className={`flex items-center  shadow-md p-6 bg-white w-[300px] rounded-r-md mr-10 ${style.episodes}`}>
+                    <div className={`flex items-center  shadow-md p-6 bg-white w-[300px] rounded-r-md mr-12 ${style.episodes}`}>
                     <div>
                         <h2 className='text-[10px] text-gray-400'>{sliders.text}</h2>
                         <h2 className='font-semibold text-[14px] md:text-[17px] '><div dangerouslySetInnerHTML={{ __html: sliders.secText }} /></h2>

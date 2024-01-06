@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa'
 export default function Footer() {
     const year = 2021
   return (
-    < div className='mt-[90px] bg-black flex justify-center items-center '>
+    < div className='mt-[90px] pl-9 bg-black flex justify-center items-center '>
         {/* <div className='  '> */}
             <div className='grid grid-cols md:grid-cols-2 mt-[65px] mb-40 mr-[50px]' >
                 <div className='text-center mb-5'><h2 className='text-[18px] text-white'><Link href={'/'}>Resonator&reg;</Link></h2>

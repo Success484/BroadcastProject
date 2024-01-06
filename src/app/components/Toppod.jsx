@@ -182,12 +182,12 @@ const responsive = {
     slidesToSlide: 3,
   },
   tablet: {
-    breakpoint: { max: 1080, min: 720 },
+    breakpoint: { max: 1080, min: 620 },
     items: 2,
     slidesToSlide: 2,
   },
   mobile: {
-    breakpoint: { max: 720, min: 0 },
+    breakpoint: { max: 620, min: 0 },
     items: 1,
     slidesToSlide: 1,
   },
@@ -195,7 +195,7 @@ const responsive = {
 
 export default function Caro() {
   const slid = swip.map((sliders) => (
-    <section key={sliders.text}>
+    <section key={sliders.text} className='flex justify-center items-center'>
         <div className='flex mb-10'>
       <div className="relative">
                         <Image src={sliders.image} height={100} width={100} alt='image' className={`relative rounded-l-md ${style.episodes} `} />
@@ -207,7 +207,7 @@ export default function Caro() {
                     <div>
                         <h2 className='text-[10px] text-gray-400'>{sliders.text}</h2>
                         <h2 className='font-semibold text-[14px] md:text-[17px] '><div dangerouslySetInnerHTML={{ __html: sliders.secText }} /></h2>
-                        <div className='h-[2px] w-[120px] bg-black'></div>
+                        <div className='h-[2px] w-[135px] bg-black'></div>
                         <div className='flex mt-5  items-center'>
                             <h2 className='text-[10px] text-gray-400 mr-1'>share</h2>
 
@@ -225,6 +225,7 @@ export default function Caro() {
        <h1 className="text-center font-bold text-[30px]">Top Podcasts:</h1>
         <p className='font-medium text-center text-[11px]'>Discover the selection of the most popular podcast.</p>
          </div>
+         <div className=''>
       <Carousel
         swipeable={false}
         draggable={false}
@@ -247,6 +248,7 @@ export default function Caro() {
         
         
       </Carousel>
+      </div>
     </div>
   );
 }

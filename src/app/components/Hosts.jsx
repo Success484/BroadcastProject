@@ -5,15 +5,17 @@ import Image from 'next/image'
 import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa'
 export default function Hosts() {
     const Host = hosters.map((host) => (
-        <section key={host.name}>
-        <Image src={host.image} height={250} width={250} alt='' className='rounded-t-md'/>
-        <div className='bg-white shadow-md rounded-b-md p-4'>
+        <section key={host.name} className=''>
+        <Image src={host.image} height={250} width={280} alt='' className='rounded-t-md'/>
+        <div className='flex items-center bg-white shadow-md p-6 rounded-b-md'>
+          <div>
         <h2 className='font-semibold text-[17px]'>{host.name}</h2>
-        <h2 className='text-[10px] text-gray-400'>{host.profession}</h2>
+        <h2 className='text-[10px] text-gray-400 mt-3'>{host.profession}</h2>
         <div className='flex space-x-3 mt-3'>
             <FaFacebook color='gray'/>
             <FaLinkedin color='gray'/>
             <FaTwitter color='gray'/>
+        </div>
         </div>
         </div>
         </section>

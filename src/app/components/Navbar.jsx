@@ -30,11 +30,11 @@ export default function AboutSection() {
                       <Link className='mr-9 ml-3' href={'/'}>Search</Link>
                       </div>
                
-                      <TbGridDots size={20}/>
-                    </div>
                     <button className='block md:hidden sm:block mr-20 -mt-[20px]'>
                      < HamburgerMenu/>
                      </button>
+                      <TbGridDots size={20}/>
+                    </div>
                 </nav>
             </div>
     </div>
